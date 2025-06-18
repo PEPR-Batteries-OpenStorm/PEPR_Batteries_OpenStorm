@@ -1,94 +1,108 @@
 <p align="center">
-  <img src="docs/img/openstorm_banner.png" width="720" alt="OPENSTORM multimodal characterisation collage"/>
+  <img src="docs/img/openstorm_banner.png" width="720"
+       alt="OPENSTORM – multimodal operando characterisation collage"/>
 </p>
 
-# PEPR Batteries – **OPENSTORM**** ("Operando Energy Storage Material Characterisation") is a French national consortium funded through the **PEPR Batteries – France 2030** programme. The project brings together synchrotron & neutron facilities, academic labs, and industrial partners to build an *open*, *modular*, and *multi‑modal* platform for understanding how batteries work — and fail — in real time.\
-This repository hosts the **data‑science & machine‑learning layer** of that platform.
+# PEPR Batteries – **OPENSTORM**
 
-| 🔑 Key ideas                | ✨ What it means                                                                        |
-| --------------------------- | -------------------------------------------------------------------------------------- |
-| **Multimodal sensors**      | Electrical (V, I), thermal, acoustic, X‑ray / µ‑CT, spectroscopy…                      |
-| **Time‑resolved, operando** | Measurements collected *while* the cell cycles, across timescales ms → months          |
-| **Open & FAIR**             | Standardised metadata schema, open‑source code, reproducible pipelines                 |
-| **AI‑powered analytics**    | Deep learning models for State‑of‑Health (SOH) prediction & degradation fingerprinting |
+> *Caractérisation operando des matériaux pour le stockage de l’énergie : 
+> Du laboratoire aux grands instruments*
 
 ---
 
-## 📂 Repository Layout
+## About OPENSTORM
 
-```text
-PEPR_Batteries_OpenStorm/
-├── docs/                   # specs, diagrams, manuscripts, banner image
-│   └── img/openstorm_banner.png
-├── data/                   # raw ↔ processed datasets (not in git)
-├── configs/                # YAML experiment configs
-├── openstorm/              # python package (datasets, models, utils)
-│   ├── datasets.py
-│   └── models/
-├── scripts/                # train / evaluate / infer entrypoints
-├── tests/                  # pytest unit tests
-├── requirements.txt
-└── README.md               # you are here
+**OPENSTORM** is a French national project funded by the **PEPR Batteries – France 2030** programme.  
+Led by Dr Sandrine Lyonnard (CEA-IRIG, Grenoble) and Prof Lorenzo Stievano (ICGM, Montpellier), the project is building an **open, multi-technique, multi-modal _operando_ characterisation platform** that probes how next-generation batteries operate **and** degrade in real time.  
+By integrating novel diffraction, imaging and spectroscopy methods, the platform correlates structural, chemical and electrochemical information across active materials, cell components (electrodes, electrolytes, current collectors) and their interfaces—accelerating our understanding of the mechanisms that govern battery performance and durability.
+
+
+Key objectives:
+
+| Key ideas                 | What it means                                                                                                        |
+| ------------------------- |----------------------------------------------------------------------------------------------------------------------|
+| **Multimodal, multi-technique** | Electrical (V, I), X-ray diffraction, nano-CT, spectroscopy …                                                        |
+| **Correlative & multi-scale** | Align data across length scales and components (materials ↔ electrodes ↔ interfaces) for analysis   |
+| **Open, FAIR & AI**       | Standard metadata schema, open-source pipelines, deep-learning models  |
+
+Official webpage → <https://www.pepr-batteries.fr/projet/openstorm/>
+
+---
+
+## Research Axes
+
+| # | Axis | Key questions & methods |
+|---|------|-------------------------|
+| **1** | **Probe the structure of battery materials** | Operando X-ray / neutron diffraction, small-angle scattering & micro-diffraction down to single particles; ad-hoc cells with temperature- and pressure-control |
+| **2** | **Decode microstructure & morphology** | High-resolution ( < 100 nm) 2D/3D imaging & tomography to map concentration heterogeneities and identify chemical phases during cycling |
+| **3** | **Study local properties & charge-transfer** | Combined bulk & surface spectroscopies to relate electronic structure, transport and interfacial kinetics – incl. thin-film model systems |
+| **4** | **Holistic, correlative view** | Standardised, multi-parameter, multi-scale database plus generic, lab-to-lab tools for cross-technique correlations and accelerated analytics |
+
+---
+
+## Research Goals
+
+- **Nation-wide characterisation platform** – build an open portfolio of diffraction, spectroscopy and imaging techniques that spans laboratory instruments **and** large-scale facilities (synchrotron, neutron).  
+- **Next-generation chemistries** – transfer 20 years of Li-ion know-how and extend it to solid-state, high-power and post-Li-ion batteries.  
+- **Real-time mechanistic insight** – couple operando spectroscopy, scattering/diffusion and electrochemistry to track reaction mechanisms and degradation as they occur.  
+- **Ad-hoc cells & standardised data** – design temperature/pressure-controlled electrochemical cells and a FAIR, multi-technique data schema to enable cross-lab correlations.  
+- **Safer, higher-performance batteries** – accelerate the development of materials and technologies with improved safety and performance, reducing environmental impact.  
+- **Skills training** – supervise **12 PhD/post-doctoral fellows** and disseminate the resulting expertise to the battery community.  
+
+
+---
+
+## 🛰️ Consortium
+
+| Labs / Facilities | Location (France) |
+|-------------------|-------------------|
+| **CEA-IRIG**, **CEA-LITEN** | Grenoble |
+| **CEA-IRAMIS** | Saclay |
+| **LRCS**, **PHENIX**, **CEMHTI** | Amiens, Paris, Orléans |
+| **ICGM**, **CIRIMAT**, **ICMCB** | Montpellier, Toulouse, Bordeaux |
+| **LEPMI**, **IPREM** | Grenoble, Pau |
+| Large instrument – **SOLEIL** (synchrotron) | Gif-sur-Yvette |
+
+> 8 academic labs, 3 CEA institutes, and the SOLEIL synchrotron join forces to span electrochemistry ↔ physics ↔ data science.
+
+<p align="center">
+  <img src="docs/img/consortium_map.png" width="600"
+       alt="Geographical distribution of the OPENSTORM consortium"/>
+  <br/>
+  <em>Figure – Geographical distribution of the OPENSTORM consortium.</em>
+</p>
+
+
+---
+
+## Data Availability
+
+| Dataset                | Format | Access |
+|------------------------|--------|--------|
+
+
+---
+
+## Citation
+
+If you use **OPENSTORM** software or data, please cite:
+
+```bibtex
+@misc{openstorm,
+  author       = {the OPENSTORM Consortium},
+  title        = {{OPENSTORM}: Operando Characterisation Platform for Next-Gen Batteries},
+  year         = 2024,
+  howpublished = {\url{https://github.com/PEPR-Batteries-OpenStorm/PEPR_Batteries_OpenStorm}},
+  note         = {PEPR Batteries – France 2030}
+}
 ```
 
----
-
-## 🚀 Quick Start
-
-```bash
-# 1. clone
-$ git clone https://github.com/<your-org>/PEPR_Batteries_OpenStorm.git
-$ cd PEPR_Batteries_OpenStorm
-
-# 2. install deps (Linux/macOS, Python ≥ 3.9)
-$ pip install -r requirements.txt
-
-# 3. run a smoke‑test on synthetic data
-$ python scripts/train_multimodal_model.py --config configs/baseline.yaml
-```
-
-👉  **Real‑world data**: put an HDF5 or Parquet file in `data/raw/` and update `dataset.path` in your YAML config. The loader auto‑detects *data* and *labels* arrays; extend `openstorm/datasets.py` for custom formats.
 
 ---
 
-## 🧠 Research Goals
+## Acknowledgements
 
-- **Early‑warning SOH** – predict capacity fade ≥ 5 cycles ahead with < 2 % RMSE
-- **Failure‑mode ID** – classify Li plating, SEI growth, cracking… from multi‑channel signatures
-- **Scalable deployment** – convert PyTorch models to TorchScript / ONNX for BMS firmware
-
----
-
-## ✨ Results Snapshot *(open‑storm‑cell‑A, 4‑modal)*
-
-| Model             | MAE (capacity) | F1 (failure) |
-| ----------------- | -------------- | ------------ |
-| LSTM baseline     | 1.8 %          | 0.72         |
-| CNN + Transformer | **1.3 %**      | **0.85**     |
-
-See `docs/paper/` for full benchmarks & ablations.
-
----
-
-## 🤝 Contributing
-
-1. **Open an issue** and describe your bug / feature idea.
-2. **Fork → branch** (`feat/your-topic`).
-3. Run `pre‑commit run ‑‑all-files` (black, ruff, mypy).
-4. Push & open a **PR**; GitHub Actions will run tests.
-
-We follow the [PEP 517] build backend and the DCO sign‑off procedure.
-
----
-
-## 📜 License
-
-Distributed under the **MIT license**. See `LICENSE`.
-
----
-
-## 🙌 Acknowledgements
-
-Project coordinated by **CEA‑IRIG**, **ICGM**, and partners at SOLEIL, ESRF, ILL, CNRS laboratories, & industrial stakeholders. Funded by the French Government under grant **ANR‑22‑PENR‑0001** (PEPR Batteries, France 2030).
-
----
+Project coordinated by **CEA-IRIG** (Grenoble) and **ICGM** (Montpellier),  
+with the contribution of **8 academic laboratories**, **3 CEA institutes**  
+and the **SOLEIL** synchrotron.  
+Funded by the French Government under the **France 2030** programme.
