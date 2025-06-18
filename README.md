@@ -17,7 +17,6 @@ Led by Dr Sandrine Lyonnard (CEA-IRIG, Grenoble) and Prof Lorenzo Stievano (ICGM
 By integrating novel diffraction, imaging and spectroscopy methods, the platform correlates structural, chemical and electrochemical information across active materials, cell components (electrodes, electrolytes, current collectors) and their interfaces—accelerating our understanding of the mechanisms that govern battery performance and durability.
 
 
-Key objectives:
 
 | Key ideas                 | What it means                                                                                                        |
 | ------------------------- |----------------------------------------------------------------------------------------------------------------------|
@@ -31,8 +30,8 @@ Official webpage → <https://www.pepr-batteries.fr/projet/openstorm/>
 
 ## Research Axes
 
-| # | Axis | Key questions & methods |
-|---|------|-------------------------|
+|       | Axis | Key questions & methods |
+|-------|------|-------------------------|
 | **1** | **Probe the structure of battery materials** | Operando X-ray / neutron diffraction, small-angle scattering & micro-diffraction down to single particles; ad-hoc cells with temperature- and pressure-control |
 | **2** | **Decode microstructure & morphology** | High-resolution ( < 100 nm) 2D/3D imaging & tomography to map concentration heterogeneities and identify chemical phases during cycling |
 | **3** | **Study local properties & charge-transfer** | Combined bulk & surface spectroscopies to relate electronic structure, transport and interfacial kinetics – incl. thin-film model systems |
@@ -52,7 +51,7 @@ Official webpage → <https://www.pepr-batteries.fr/projet/openstorm/>
 
 ---
 
-## 🛰️ Consortium
+## Consortium
 
 | Labs / Facilities | Location (France) |
 |-------------------|-------------------|
