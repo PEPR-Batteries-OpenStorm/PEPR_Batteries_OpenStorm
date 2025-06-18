@@ -1,8 +1,8 @@
-# PEPR Batteries – **OPENSTORM**
+<p align="center">
+  <img src="docs/img/openstorm_banner.png" width="720" alt="OPENSTORM multimodal characterisation collage"/>
+</p>
 
-> *Operando multi‑technique characterisation of battery materials: from the lab bench to large‑scale instruments.*
-
-**OPENSTORM** ("Operando Energy Storage Material Characterisation") is a French national consortium funded through the **PEPR Batteries – France 2030** programme. The project brings together synchrotron & neutron facilities, academic labs, and industrial partners to build an *open*, *modular*, and *multi‑modal* platform for understanding how batteries work — and fail — in real time.\
+# PEPR Batteries – **OPENSTORM**** ("Operando Energy Storage Material Characterisation") is a French national consortium funded through the **PEPR Batteries – France 2030** programme. The project brings together synchrotron & neutron facilities, academic labs, and industrial partners to build an *open*, *modular*, and *multi‑modal* platform for understanding how batteries work — and fail — in real time.\
 This repository hosts the **data‑science & machine‑learning layer** of that platform.
 
 | 🔑 Key ideas                | ✨ What it means                                                                        |
@@ -90,3 +90,5 @@ Distributed under the **MIT license**. See `LICENSE`.
 ## 🙌 Acknowledgements
 
 Project coordinated by **CEA‑IRIG**, **ICGM**, and partners at SOLEIL, ESRF, ILL, CNRS laboratories, & industrial stakeholders. Funded by the French Government under grant **ANR‑22‑PENR‑0001** (PEPR Batteries, France 2030).
+
+---
